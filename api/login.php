@@ -14,10 +14,9 @@
      
         if ($user != false) {
             // user is found
-            $response["result"]["firstName"] = $user["first_name"];
-            $response["result"]["lastName"] = $user["last_name"];
-            $response["result"]["displayName"] = $user["display_name"];
-            $response["result"]["gender"] = $user["gender"];
+            $response["result"]["userName"] = $user["username"];
+       
+ 
             $response["result"]["email"] = $user["email"];
             $response["result"]["createdTime"] = $user["created_at"];
             $response["result"]["updatedTime"] = $user["updated_at"];
